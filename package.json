@@ -1,0 +1,19 @@
+{
+  "name": "empire-lead-company-voice-agent",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run agent:build && tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "agent:build": "tsx scripts/build-agent.ts",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.4",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3",
+    "vite": "8.3.1"
+  }
+}
